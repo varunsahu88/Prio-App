@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prio Logo Font Options</title>
+    <!-- Import all 5 fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #1a1a2e; /* App dark theme */
+            color: white;
+            font-family: 'DM Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+        }
+
+        h1 { margin-bottom: 20px; font-weight: 500; font-size: 20px; color: #a1a1aa; }
+
+        .logo-container {
+            width: 100%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px 30px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .label {
+            font-size: 14px;
+            color: #fbbf24;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* The actual logo styling applied to all */
+        .prio-logo {
+            font-size: 56px;
+            background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899, #f43f5e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            line-height: 1.2;
+            padding-bottom: 8px; /* For tails/descenders */
+            filter: drop-shadow(0 2px 8px rgba(168, 85, 247, 0.2));
+        }
+
+        /* Font Specific Classes */
+        .font-pacifico { font-family: 'Pacifico', cursive; font-weight: 400; }
+        .font-caveat { font-family: 'Caveat', cursive; font-weight: 700; } /* Bold Caveat */
+        .font-dancing { font-family: 'Dancing Script', cursive; font-weight: 700; } /* Bold Dancing Script */
+        .font-marker { font-family: 'Permanent Marker', cursive; font-weight: 400; }
+        .font-kaushan { font-family: 'Kaushan Script', cursive; font-weight: 400; }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Pick the Signature Font that looks best for the logo</h1>
+
+    <div class="logo-container">
+        <div class="label">1. Pacifico</div>
+        <div class="prio-logo font-pacifico">Prio</div>
+    </div>
+
+    <div class="logo-container">
+        <div class="label">2. Caveat (Bold)</div>
+        <div class="prio-logo font-caveat">Prio</div>
+    </div>
+
+    <div class="logo-container">
+        <div class="label">3. Dancing Script (Bold)</div>
+        <div class="prio-logo font-dancing">Prio</div>
+    </div>
+
+    <div class="logo-container">
+        <div class="label">4. Permanent Marker</div>
+        <div class="prio-logo font-marker">Prio</div>
+    </div>
+
+    <div class="logo-container">
+        <div class="label">5. Kaushan Script</div>
+        <div class="prio-logo font-kaushan">Prio</div>
+    </div>
+
+</body>
+</html>

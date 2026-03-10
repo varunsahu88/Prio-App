@@ -1,0 +1,78 @@
+Design a full-screen mobile login UI for a task management app called "Prio·" (tagline: "Stay Focused. Stay Sharp.").
+
+---
+
+CONCEPT & VIBE:
+- Theme: Playful + Premium — like a productivity app that's actually fun to use
+- Color palette: Deep purple/indigo background (#4a4adb → #2d2d8f gradient), with soft glowing accents
+- The caterpillar character from the app's progress bar is the mascot/hero of this screen
+- Mood: Friendly, welcoming, slightly whimsical but still professional
+
+---
+
+SCREEN 1 — Login Screen (Full Screen):
+
+Background:
+- Full screen deep purple-indigo gradient: linear-gradient(160deg, #5b5fc7 0%, #2d2d8f 60%, #1a1a5e 100%)
+- Soft glowing blob shapes in background (blurred, semi-transparent) — like light orbs floating
+- Subtle floating dots animating slowly in background
+
+Top Section:
+- Big bold "Prio·" wordmark — serif font, white with gradient shimmer effect
+- Tagline below: "Stay Focused. Stay Sharp." — small, light weight, white 60% opacity
+
+Hero / 3D Caterpillar Section (CENTER — most prominent):
+- A large 3D-style caterpillar character sitting in the middle of screen
+- Caterpillar looks happy and welcoming — eyes looking at user, antennae wiggling
+- 3D effect via: layered radial gradients, deep shadows, specular highlights on each body segment
+- Caterpillar sits on a soft glowing platform/leaf
+- Idle animations:
+  - Body segments gently wave (sine ripple, subtle)
+  - Antennae sway left-right independently
+  - Eyes blink every few seconds
+  - Caterpillar slightly bounces up-down (floating feel)
+- Below caterpillar: welcome text "Hey there! Ready to crush your goals?" — bubbly font, white
+
+Bottom Section (Login Area):
+- Frosted glass card at bottom (backdrop-blur, white 12% opacity, border white 20%)
+- Card has soft rounded top corners (border-radius: 32px 32px 0 0)
+- Inside card:
+  - Heading: "Get Started" — bold, white
+  - Subtext: "Sign in to save your tasks & progress" — small, muted
+  - Google Sign In Button — full width, white background, Google logo on left, text: "Continue with Google", bold dark text, rounded pill shape, subtle shadow
+  - Below button: tiny text — "No password needed. One tap and you're in."
+
+---
+
+SCREEN 2 — Name Input Screen (After Google Login):
+
+Appears after Google account is connected. Same background as Screen 1.
+
+Caterpillar reacts: now looks excited — bigger smile, antennae spinning, small celebration confetti burst around it
+
+Content:
+- Heading: "Almost there! 🎉"
+- Subtext: "What should Prio call you?"
+- Name input field — frosted glass style, white border, placeholder: "Your first name...", large font inside
+- Below input: "Let's Go →" button — full width, gradient fill (#6c63ff → #a78bfa), white bold text, pill shape
+- Small skip option: "Skip for now" — tiny, muted text link
+
+---
+
+3D ANIMATION DETAILS:
+- All 3D effects via CSS only — radial gradients + box shadows simulate depth
+- Each caterpillar segment: radial-gradient(circle at 35% 30%, lightGreen, medGreen, darkGreen) + inner shadow
+- Segment idle animation: translateY sine wave via JS Math.sin(time - index * 0.7) * 4
+- Head: larger sphere with specular highlight at top-left
+- Antennae tips: small orange spheres with glow: box-shadow: 0 0 8px #ff8f00
+- Platform/leaf under caterpillar: ellipse with radial green glow, soft shadow below
+
+---
+
+SPECS:
+- Mobile first: 375px width base
+- Font: Playfair Display (brand) + DM Sans (body)
+- All interactive elements: active scale 0.97 press feedback
+- Google button: on tap → brief loading spinner inside button → transition to Screen 2
+- Screen transition: Screen 1 → Screen 2 via slideUp animation (0.4s cubic-bezier)
+- Single HTML file, vanilla JS, no frameworks
