@@ -22,7 +22,7 @@ const config: CapacitorConfig = {
   },
 
   android: {
-    backgroundColor: '#3b0764',
+    backgroundColor: '#0f1115',
     allowMixedContent: false,
     captureInput: true,
     webContentsDebuggingEnabled: false,
@@ -30,7 +30,7 @@ const config: CapacitorConfig = {
   },
 
   ios: {
-    backgroundColor: '#3b0764',
+    backgroundColor: '#0f1115',
     contentInset: 'automatic',
     scrollEnabled: false,
     overrideUserAgent: 'Prio-iOS/1.0',
@@ -38,11 +38,11 @@ const config: CapacitorConfig = {
 
   plugins: {
     SplashScreen: {
-      launchShowDuration: 1500,
+      launchShowDuration: 0,
       launchAutoHide: true,
-      backgroundColor: '#000000',
+      backgroundColor: '#0f1115',
       androidSplashResourceName: 'splash',
-      androidScaleType: 'CENTER_INSIDE',
+      androidScaleType: 'CENTER',
       showSpinner: false,
       splashFullScreen: true,
       splashImmersive: true,
@@ -50,7 +50,7 @@ const config: CapacitorConfig = {
 
     StatusBar: {
       style: 'DARK',
-      backgroundColor: '#3b0764',
+      backgroundColor: '#0f1115',
       overlaysWebView: false,
     },
 

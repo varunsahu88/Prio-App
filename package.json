@@ -1,7 +1,7 @@
 {
   "name": "prio-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,11 +17,10 @@
     "@capacitor/ios": "^6.2.1",
     "@capacitor/keyboard": "^6.0.0",
     "@capacitor/local-notifications": "^6.0.0",
+    "@capacitor/splash-screen": "^6.0.4",
     "@capacitor/status-bar": "^6.0.0",
-    "@codetrix-studio/capacitor-google-auth": "^3.3.6",
     "@react-three/drei": "^9.102.6",
     "@react-three/fiber": "^8.15.19",
-    "firebase": "^10.8.0",
     "framer-motion": "^11.0.8",
     "lucide-react": "^0.344.0",
     "react": "^18.2.0",
